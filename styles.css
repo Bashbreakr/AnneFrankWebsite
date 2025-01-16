@@ -1,80 +1,125 @@
-body {
-    font-family: Arial, sans-serif;
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
+/* Body and Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
 header {
-    background: #0056b3; /* Neuer Farbton für die Überschrift */
+    background: #333;
     color: #fff;
-    padding: 15px 0; /* Mehr Platz für die Überschrift */
+    padding: 20px 0;
     text-align: center;
 }
 
+/* Navigation Styles */
 nav {
     background: #444;
-    position: sticky; /* Macht die Navigation immer sichtbar */
-    top: 0; /* Setzt die Navigation an den oberen Rand */
-    z-index: 1000; /* Hält die Navigation über anderen Inhalten */
+    position: sticky; /* Macht die Navigation sticky */
+    top: 0; /* Positioniert die Navigation am oberen Rand des Containers */
+    z-index: 1000; /* Stellt sicher, dass die Navigation über anderen Inhalten bleibt */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Flexbox für gleichmäßige Verteilung */
+    display: flex; /* Horizontale Navigation */
     justify-content: center; /* Zentriert die Navigation */
 }
 
-nav ul li {
-    margin: 0 15px; /* Gleicher Abstand zwischen den Punkten */
+nav li {
+    padding: 15px;
 }
 
-nav ul li.separator {
-    width: 1px; /* Breite der Trennsäulen */
-    background-color: white; /* Farbe der Trennsäulen */
-    height: 20px; /* Höhe der Trennsäulen */
-}
-
+/* Link Styles */
 nav a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s, transform 0.3s; /* Übergang für Farbe und Transformation */
 }
 
+nav a:hover {
+    color: #ffcc00; /* Ändert die Farbe beim Hover */
+    transform: scale(1.1); /* Vergrößert den Link leicht */
+}
+
+/* Aktiver Link Stil */
+nav a.active {
+    color: #ffcc00; /* Farbe für den aktiven Link */
+    position: relative; /* Position für den Pseudoeffekt */
+}
+
+nav a.active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px; /* Abstand vom Text */
+    width: 100%;
+    height: 2px; /* Höhe der Unterstreichung */
+    background: #ffcc00; /* Farbe der Unterstreichung */
+    transform: translateX(-50%); /* Zentriert die Unterstreichung */
+    transition: width 0.3s; /* Übergang für die Breite */
+}
+
+/* Main Content Styles */
 main {
-    padding: 40px 20px; /* Mehr Abstand zwischen den Abschnitten */
+    padding: 20px;
+    max-width: 800px;
+    margin: auto; /* Zentriert den Hauptinhalt */
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Abstand zum oberen Rand, um die Navigation zu berücksichtigen */
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: 2px solid #ddd; /* Dezente Trennung zwischen Abschnitten */
+    min-height: 100vh; /* Jeder Abschnitt nimmt mindestens die Höhe des Bildschirms ein */
 }
 
 h2 {
     color: #333;
-    margin-top: 40px; /* Mehr Abstand über den Überschriften */
+    margin-bottom: 10px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0; /* Abstand über und unter der Tabelle */
+h3 {
+    color: #666;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 10px; /* Mehr Platz in den Zellen */
-    text-align: left;
-}
-
+/* Footer Styles */
 footer {
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     background: #333;
     color: #fff;
+    position: relative; /* Ermöglicht, dass der Footer am Ende bleibt */
 }
 
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Vertikale Navigation für mobile Geräte */
+    }
 
+    nav li {
+        text-align: center; /* Zentriert den Text für mobile Geräte */
+    }
+
+    main {
+        padding: 10px; /* Reduziert den Abstand auf mobilen Geräten */
+    }
+}
