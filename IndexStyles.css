@@ -1,1 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #0056b3; /* Neuer Farbton für die Überschrift */
+    color: #fff;
+    padding: 15px 0; /* Mehr Platz für die Überschrift */
+    text-align: center;
+}
+
+nav {
+    background: #444;
+    position: sticky; /* Macht die Navigation immer sichtbar */
+    top: 0; /* Setzt die Navigation an den oberen Rand */
+    z-index: 1000; /* Hält die Navigation über anderen Inhalten */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox für gleichmäßige Verteilung */
+    justify-content: center; /* Zentriert die Navigation */
+}
+
+nav ul li {
+    margin: 0 15px; /* Gleicher Abstand zwischen den Punkten */
+}
+
+nav ul li.separator {
+    width: 1px; /* Breite der Trennsäulen */
+    background-color: white; /* Farbe der Trennsäulen */
+    height: 20px; /* Höhe der Trennsäulen */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 40px 20px; /* Mehr Abstand zwischen den Abschnitten */
+}
+
+h2 {
+    color: #333;
+    margin-top: 40px; /* Mehr Abstand über den Überschriften */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0; /* Abstand über und unter der Tabelle */
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px; /* Mehr Platz in den Zellen */
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
 
