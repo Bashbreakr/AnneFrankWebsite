@@ -100,6 +100,23 @@ h3 {
     margin-bottom: 10px;
 }
 
+/* Custom Styles for 'Was wir im Unterricht gemacht haben' */
+#unterricht ul {
+    list-style: circle; /* Ändert die Form der Stichpunkte */
+    color: #070c5b; /* Setzt die Farbe der Stichpunkte */
+    margin-bottom: 15px; /* Abstand zwischen den Stichpunkten */
+    padding-left: 25px; /* Abstand vor den Stichpunkten */
+}
+
+#unterricht ul li {
+    margin-bottom: 10px; /* Abstand zwischen den Zeilen */
+}
+
+.Headline-ShortVersion {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
 /* Footer Styles */
 footer {
     text-align: center;
