@@ -1,0 +1,31 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2; /* Hellgrau für Hintergrund */
+  color: #333; /* Dunkelgrau für Text */
+  margin: 0;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+a {
+  display: block;
+  background-color: #fff; /* Weißer Hintergrund für Links */
+  padding: 15px;
+  border-radius: 8px; /* Abgerundete Ecken für Links */
+  text-decoration: none;
+  color: #333; /* Dunkelgrau für Text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Leichter Schatten für Links */
+}
+
+a:hover {
+  background-color: #e6b800; /* Gelb beim Hover */
+  color: #fff; /* Weißer Text beim Hover */
+}
