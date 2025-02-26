@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Links der Videos</title>
+	<link rel="stylesheet" href="Linkstyles.css">
+</head>
+<body>
+	<ul>
+    <li>
+        <a href="https://www.ardmediathek.de/video/triff/anne-frank/kika/Y3JpZDovL2tpa2EuZGUvc2VuZHVuZy9jb250ZW50LTcyOTI4XzE3Mzc1NzAzMDAwMDA?isChildContent" target="_blank">Triff | Anne Frank</a>
+    </li>
+    <li>
+        <a href="https://www.ardmediathek.de/video/der-krieg-und-ich/was-war-die-nsdap/kika/Y3JpZDovL3N3ci5kZS9hZXgvbzExMjU5MDg?isChildContent" target="_blank">Was war die NSDAP?</a>
+    </li>
+    <li>
+        <a href="https://www.ardmediathek.de/video/der-krieg-und-ich/was-war-die-hitlerjugend/kika/Y3JpZDovL3N3ci5kZS9hZXgvbzExMjU4OTY?isChildContent" target="_blank">Was war die Hitlerjugend?</a>
+    </li>
+    <li>
+        <a href="https://www.ardmediathek.de/video/der-krieg-und-ich/die-diktatur-der-nationalsozialisten/kika/Y3JpZDovL3N3ci5kZS9hZXgvbzExMjgxNDM?isChildContent" target="_blank">Die Diktatur der Nationalsozilisten</a>
+    </li>
+    <li>
+        <a href="https://www.ardmediathek.de/video/der-krieg-und-ich/was-war-der-holocaust/kika/Y3JpZDovL3N3ci5kZS9hZXgvbzExMjgyMDM?isChildContent" target="_blank">Was war der Holocaust?</a>
+    </li>
+    <li>
+        <a href="https://www.ardmediathek.de/video/der-krieg-und-ich/was-war-ein-konzentrationslager/kika/Y3JpZDovL3N3ci5kZS9hZXgvbzExMjU5MDA?isChildContent" target="_blank">Was war ein Konzentrationslager?</a>
+    </li>
+    <li>
+        <a href="https://www.ardmediathek.de/video/der-krieg-und-ich/was-war-die-deportation/kika/Y3JpZDovL3N3ci5kZS9hZXgvbzExNDQ2NDM?isChildContent" target="_blank">Was war die Deportation?</a>
+    </li>
+</ul>
+
+</body>
+</html>
